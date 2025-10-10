@@ -13,4 +13,6 @@ printf("Diff of %d&%d=%d\n",var1,var2,var1-var2);
 printf("product of%dand%d=%d\n",var1,var2,var1*var2);
 div=var1/var2;
 printf("Div of %d&%d=%f",var1,var2,div);
+printf("Modulus of %d %d=%d",war1,var2 var1%var2);
 }
+
