@@ -1,28 +1,22 @@
-
 #include <stdio.h>
 
-int main()
- {
-    int num, i, isPrime=1;
+int main() {
+    float principal, rate, time, interest;
+    int i;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+    for (i = 1; i <= 3; i++) {
+        printf("Set %d:\n", i);
+        printf("Enter principal amount: ");
+        scanf("%f", &principal);
+        printf("Enter rate of interest (in %%): ");
+        scanf("%f", &rate);
+        printf("Enter time (in years): ");
+        scanf("%f", &time);
 
-    if (num <= 1) {
-        isPrime = 0;
-    } else {
-        for (i = 2; i * i <= num; i++) {
-            if (num % i == 0) {
-                isPrime = 0;
-                break;
-            }
-        }
+        interest = (principal * rate * time) / 100.0;
+
+        printf("Simple interest for set %d = %.2f\n\n", i, interest);
     }
 
-    if (isPrime) {
-        printf("%d is a prime number.\n", num);
-    } else {
-        printf("%d is not a prime number.\n", num);
-    }
 
 }
