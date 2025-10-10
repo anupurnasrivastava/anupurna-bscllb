@@ -1,5 +1,5 @@
 #include<stdio.h>
-main()
+int main()
 {
     int a,b,r;
     printf("enter 2 numbers");
@@ -7,3 +7,4 @@ main()
     r=a>b?a:b;
     printf("greatest number:%d",r);
 }
+
