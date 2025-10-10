@@ -4,6 +4,7 @@ int main()
 int choice;
 printf("enter a number between 1 to 7");
 scanf ("%d",&choice);
+switch (choice)
 {
 case 1: printf("monday");
 break;
@@ -21,3 +22,4 @@ default printf("wrong choice");
 
 }
 }
+
